@@ -45,36 +45,36 @@
 </nav>
 
 <div class="evt">
-<form:form method="post" modelAttribute="event">
-    <label class="label"> Event Name </label>
-    <form:input path="name" class="ss"/><br>
-    <form:errors path="name" cssClass="error" element="div"/>
-    <label class="label"> Date </label>
-     <form:input type="date" path="date" class="ss"/><br>
-    <form:errors path="date" cssClass="error" element="div"/>
-    <label class="label"> Members </label>
-     <form:select path="members" class="ss">
-    <form:option value="0" label="--Please Select--"/>
-    <form:options items="${members}" itemLabel="name" itemValue="id"/>
-</form:select><br>
-    <form:errors path="members" cssClass="error" element="div"/>
-    <label class="label"> Start time </label>
-    <form:input type="time" path="timeFrom" class="ss"/><br>
-    <form:errors path="timeFrom" cssClass="error" element="div"/>
-    <label class="label"> End time </label>
-     <form:input type="time" path="timeTo" class="ss"/><br>
-    <form:errors path="timeTo" cssClass="error" element="div"/>
-    <label class="label"> Category </label>
-    <form:select path="category" class="ss">
-    <form:option value="0" label="--Please Select--"/>
-    <form:options items="${categories}"/>
-</form:select><br>
-    <form:errors path="category" cssClass="error" element="div"/>
-    <label class="label"> Notes </label>
-    <form:textarea rows="5" cols="20" path="notes" class="ss"/><br>
-    <form:errors path="notes" cssClass="error" element="div"/>
-    <input type="submit" value="add" class="ss" style="font-weight: bolder"/>
-</form:form>
+    <form:form method="post" modelAttribute="event">
+        <label class="label"> Event Name </label>
+        <form:input path="name" class="ss"/><br>
+        <form:errors path="name" cssClass="error" element="div"/>
+        <label class="label"> Date </label>
+        <form:input type="date" path="date" class="ss"/><br>
+        <form:errors path="date" cssClass="error" element="div"/>
+        <label class="label"> Members </label>
+        <form:select path="members" class="ss">
+            <form:option value="0" label="--Please Select--"/>
+            <form:options items="${members}" itemLabel="name" itemValue="id"/>
+        </form:select><br>
+        <form:errors path="members" cssClass="error" element="div"/>
+        <label class="label"> Start time </label>
+        <form:input type="time" path="timeFrom" class="ss"/><br>
+        <form:errors path="timeFrom" cssClass="error" element="div"/>
+        <label class="label"> End time </label>
+        <form:input type="time" path="timeTo" class="ss"/><br>
+        <form:errors path="timeTo" cssClass="error" element="div"/>
+        <label class="label"> Category </label>
+        <form:select path="category" class="ss">
+            <form:option value="0" label="--Please Select--"/>
+            <form:options items="${categories}"/>
+        </form:select><br>
+        <form:errors path="category" cssClass="error" element="div"/>
+        <label class="label"> Notes </label>
+        <form:textarea rows="5" cols="20" path="notes" class="ss"/><br>
+        <form:errors path="notes" cssClass="error" element="div"/>
+        <input type="submit" value="add" class="ss" style="font-weight: bolder"/>
+    </form:form>
 
 </div>
 

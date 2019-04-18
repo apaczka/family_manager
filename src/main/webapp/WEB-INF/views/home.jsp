@@ -50,7 +50,9 @@
             <br>
             <br>
             <h1 class="display-3">Welcome to Family Manager!</h1>
-            <p> Family manager is a web application designed to help you in managing your day-to day family life. With this application you will be able to handle all your overwhelming family duties in just a few seconds! Start now and register for free! </p>
+            <p> Family manager is a web application designed to help you in managing your day-to day family life. With
+                this application you will be able to handle all your overwhelming family duties in just a few seconds!
+                Start now and register for free! </p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
@@ -60,17 +62,20 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>Newsletter</h2>
-                <p>As a member of Famili Manager community you can sign-in for our newsletter for free. You will have then access to latest news from FM community as well as special discounts for all our products. </p>
+                <p>As a member of Famili Manager community you can sign-in for our newsletter for free. You will have
+                    then access to latest news from FM community as well as special discounts for all our products. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>New capabilities</h2>
-                <p>Lear more about latest featres developped by Family Manager team. We are constantly improving our Family Manager in order to give you product of utmost quality. </p>
+                <p>Lear more about latest featres developped by Family Manager team. We are constantly improving our
+                    Family Manager in order to give you product of utmost quality. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>New posts on our FM blog</h2>
-                <p>Read the latest posts on our Family Manager blog. Make yourself up-to-date with recent news from familiy-life. </p>
+                <p>Read the latest posts on our Family Manager blog. Make yourself up-to-date with recent news from
+                    familiy-life. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
         </div>
@@ -82,7 +87,7 @@
     <div class="container">
         <div class="row">
 
-                <img src="/images/family.jpg"/>
+            <img src="/images/family.jpg"/>
 
 
         </div>

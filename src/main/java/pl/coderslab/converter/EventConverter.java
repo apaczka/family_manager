@@ -8,11 +8,11 @@ import pl.coderslab.service.EventService;
 public class EventConverter implements Converter<String, Event> {
 
     @Autowired
-   private EventService eventService;
+    private EventService eventService;
 
     @Override
     public Event convert(String s) {
-       return eventService.findById(Long.parseLong(s));
+        return eventService.findById(Long.parseLong(s));
 
     }
 }

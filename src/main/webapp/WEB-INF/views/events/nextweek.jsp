@@ -50,7 +50,7 @@
 
 <table class="table table-hover table-dark calendar">
     <c:forEach var="hour" begin="4" end="23">
-        <tr >
+        <tr>
             <c:forEach var="dayOfWeek" begin="0" end="7">
                 <td>
                     <c:choose>
@@ -58,7 +58,8 @@
                             <c:choose>
                                 <c:when test="${dayOfWeek != 0}">
                                     <b>
-                                            ${today.plusDays(dayOfWeek-1).getDayOfWeek()}<br>${today.plusDays(dayOfWeek-1)}</b>
+                                            ${today.plusDays(dayOfWeek-1).getDayOfWeek()}<br>${today.plusDays(dayOfWeek-1)}
+                                    </b>
                                 </c:when>
                             </c:choose>
                         </c:when>
@@ -72,21 +73,25 @@
                                     <%--${eventsMap.get(today.plusDays(dayOfWeek-1))}<br><br>--%>
                                     <%--Godzina ${LocalTime.now()}<br><br>--%>
                                     <%--${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}--%>
-                                    <c:set var="event" value="${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}"></c:set>
+                                    <c:set var="event"
+                                           value="${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}"></c:set>
                                     <c:if test="${not empty event}">
 
                                         <div class="calendar">
-                                            Name:  <span style="font-weight: bold"> ${event.name} </span><br>
-                                            End Time:  <span> ${event.timeTo} </span><br>
+                                            Name: <span style="font-weight: bold"> ${event.name} </span><br>
+                                            End Time: <span> ${event.timeTo} </span><br>
                                                 <%--<span> ${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0)).members} </span><br>--%>
                                             <c:forEach items="${event.members}" var="member">
-                                                Members:    <span>${member.name}</span><br>
+                                                Members: <span>${member.name}</span><br>
                                             </c:forEach>
                                             Category: <span> ${event.category} </span><br>
                                             Notes: <span> ${event.notes} </span><br>
-                                            <a href="/app/events/notify/${event.id}"><img class="pencil" src="/resources/images/email.png"/></a><br>
-                                            <a href="/app/events/edit/${event.id}"><img class="pencil" src="/resources/images/pencil.svg"/></a><br>
-                                            <a href="/app/events/remove/${event.id}"><img class="pencil" src="/resources/images/recycle-bin.svg"/></a><br>
+                                            <a href="/app/events/notify/${event.id}"><img class="pencil"
+                                                                                          src="/resources/images/email.png"/></a><br>
+                                            <a href="/app/events/edit/${event.id}"><img class="pencil"
+                                                                                        src="/resources/images/pencil.svg"/></a><br>
+                                            <a href="/app/events/remove/${event.id}"><img class="pencil"
+                                                                                          src="/resources/images/recycle-bin.svg"/></a><br>
 
 
                                         </div>

@@ -1,6 +1,5 @@
 
-
-.calendar{
+.calendar {
     border-color: #0056b3;
     border-style: groove;
     border-width: 1px;
@@ -9,86 +8,96 @@
     font-size: 12px;
 }
 
- a.calendar{
-    color:white;
+a.calendar {
+    color: white;
 }
- .login{
-     margin-top: 150px;
- }
- .register{
-     margin-top: 100px;
- }
- .mm {
-width: 250px;
 
- }
- .main{
-     margin-left: 100px;
-     font-weight: bold;
- }
+.login {
+    margin-top: 150px;
+}
 
- .add{
-     margin-top: 110px;
-     -moz-border-radius: 5px 15px;
-     border-radius: 5px 15px;
-     -moz-box-shadow: -5px -5px 5px 5px #888;
-     -webkit-box-shadow: -5px -5px 5px 5px #888;
-     box-shadow: -5px -5px 5px 5px #5a6268;
-     width: 50%;
-     alignment: center;
-     margin-left: 300px;
+.register {
+    margin-top: 100px;
+}
 
- }
+.mm {
+    width: 250px;
 
-.bb{
+}
+
+.main {
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.add {
+    margin-top: 110px;
+    -moz-border-radius: 5px 15px;
+    border-radius: 5px 15px;
+    -moz-box-shadow: -5px -5px 5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px 5px #888;
+    box-shadow: -5px -5px 5px 5px #5a6268;
+    width: 50%;
+    alignment: center;
+    margin-left: 300px;
+
+}
+
+.bb {
     background-color: lightskyblue;
 }
-.label{
+
+.label {
     margin-top: 7px;
     margin-bottom: 7px;
     display: block;
     font-weight: bold;
 }
-.ss{
+
+.ss {
     width: 200px;
 }
 
-.tab{
+.tab {
     margin-left: 200px;
 
 }
-.member{
+
+.member {
     text-align: center;
     margin-bottom: 50px;
 }
-.bt{
+
+.bt {
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
-.img{
+.img {
     background-image: url("/images/adult.jpg");
 }
 
-.evt{
+.evt {
     margin-left: 50px;
 }
 
-.blu{
+.blu {
     background-image: url("/images/new_adult.jpg");
-    }
+}
 
-.user{
+.user {
 
     margin-top: 150px;
 
 }
-.sep{
+
+.sep {
     background-image: url("/images/siblin.jpg");
-       background-position: center;
+    background-position: center;
 }
-.white{
-    font-color:white;
+
+.white {
+    font-color: white;
 }
 
 
@@ -106,20 +115,24 @@ width: 250px;
     padding: 10px;
     font-size: 16px;
 }
+
 .form-signin .form-control:focus {
     z-index: 2;
 }
+
 .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
+
 .form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.pencil{
+
+.pencil {
     height: 20px;
     width: auto;
 }

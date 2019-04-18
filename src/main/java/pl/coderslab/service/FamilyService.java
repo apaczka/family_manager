@@ -15,12 +15,13 @@ public class FamilyService {
     @Autowired
     private FamilyRepository familyRepository;
 
-public Family findById(Long id){
-  return  familyRepository.findOne(id);
-}
-public void saveFamily(Family family){
-    familyRepository.save(family);
-}
+    public Family findById(Long id) {
+        return familyRepository.findOne(id);
+    }
+
+    public void saveFamily(Family family) {
+        familyRepository.save(family);
+    }
 
 
 }

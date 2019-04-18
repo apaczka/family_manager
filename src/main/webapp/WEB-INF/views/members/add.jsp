@@ -48,31 +48,32 @@
 
 <div align="center" class="add">
 
-<form:form method="post" modelAttribute="member">
+    <form:form method="post" modelAttribute="member">
 
-    <label class="label"> Name </label>
+        <label class="label"> Name </label>
 
-     <form:input path="name" class="ss"/>
-    <br>
-    <form:errors path="name" cssClass="error" element="div"/>
+        <form:input path="name" class="ss"/>
+        <br>
+        <form:errors path="name" cssClass="error" element="div"/>
 
-    <label class="label"> Role </label>
-     <form:select path="role" class="ss">
-        <form:option value="0" label="--Please Select--"/>
-        <form:options items="${roles}"/>
-    </form:select><br>
-    <form:errors path="role" cssClass="error" element="div"/>
+        <label class="label"> Role </label>
+        <form:select path="role" class="ss">
+            <form:option value="0" label="--Please Select--"/>
+            <form:options items="${roles}"/>
+        </form:select><br>
+        <form:errors path="role" cssClass="error" element="div"/>
 
-    <label class="label"> Phone number </label>
-    <form:input type="number" path="phoneNumber" class="ss"/><br>
-    <form:errors path="phoneNumber" cssClass="error" element="div"/>
-    <label class="label"> Email </label>
-    <form:input path="email" class="ss"/><br>
-    <form:errors path="email" cssClass="error" element="div"/>
+        <label class="label"> Phone number </label>
+        <form:input type="number" path="phoneNumber" class="ss"/><br>
+        <form:errors path="phoneNumber" cssClass="error" element="div"/>
+        <label class="label"> Email </label>
+        <form:input path="email" class="ss"/><br>
+        <form:errors path="email" cssClass="error" element="div"/>
+        <label class="label"> Add </label>
+        <input class="ss" type="submit" value="add"/>
 
-    +
 
-</form:form>
+    </form:form>
 
 </div>
 

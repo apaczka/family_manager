@@ -14,6 +14,6 @@ public interface EventRepository extends JpaRepository<Event, Long> {
 
     List<Event> findEventByFamily(Family family);
 
-    List<Event> findEventByDateBetweenAndMembers(LocalDate start, LocalDate end,FamilyMember member);
+    List<Event> findEventByDateBetweenAndMembers(LocalDate start, LocalDate end, FamilyMember member);
 
 }

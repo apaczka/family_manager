@@ -261,13 +261,13 @@ public class EventController {
 
         Event event = eventService.findById(id);
         String subject = "new event in your Family Manager!";
-         List<FamilyMember> members = event.getMembers();
-         List<String> emails = new ArrayList<>();
-         for(FamilyMember member:members){
-             emails.add(member.getEmail());
+        List<FamilyMember> members = event.getMembers();
+        List<String> emails = new ArrayList<>();
+        for (FamilyMember member : members) {
+            emails.add(member.getEmail());
 
-         }
-        for(String email : emails){
+        }
+        for (String email : emails) {
             String text = "event: " + event.getName() + " participants: " + event.getMembers().toString() + " date: " + event.getDate() + " time: " + event.getTimeFrom() + "-" + event.getTimeTo();
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(email);

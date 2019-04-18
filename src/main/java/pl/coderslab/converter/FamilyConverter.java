@@ -10,7 +10,6 @@ import pl.coderslab.service.MemberService;
 public class FamilyConverter implements Converter<String, Family> {
 
 
-
     @Autowired
     private FamilyService familyService;
 

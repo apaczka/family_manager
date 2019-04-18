@@ -53,46 +53,45 @@
         <%--<img src="/images/icon.png">--%>
 
 
-
     </div>
 </div>
 
 
-    <div class="row" >
-        <div class="col-sm-6 col-md-9 col-md-offset-3" align="center">
-<table class="table table-striped tab">
-    <thead>
-    <tr>
-        <th scope="col"> Actions</th>
-        <th scope="col"> Family member</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <c:forEach var="member" items="${members}">
-        <th scope="row">
-            <div class="btn-group-vertical">
-                <a href="/app/members/remove/${member.id}"
-                   onclick="return confirm('Are you sure you want to delete this item?');">
-                    <button type="button" class="btn btn-success mm bt"> Remove</button>
-                </a>
-                <a href="/app/members/edit/${member.id}">
-                    <button type="button" class="btn btn-warning mm bt">Edit</button>
-                </a>
-                <a href="/app/members/plan/${member.id}">
-                    <button type="button" class="btn btn-primary mm bt">Week plan</button>
-                </a>
-            </div>
-        </th>
+<div class="row">
+    <div class="col-sm-6 col-md-9 col-md-offset-3" align="center">
+        <table class="table table-striped tab">
+            <thead>
+            <tr>
+                <th scope="col"> Actions</th>
+                <th scope="col"> Family member</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <c:forEach var="member" items="${members}">
+                <th scope="row">
+                    <div class="btn-group-vertical">
+                        <a href="/app/members/remove/${member.id}"
+                           onclick="return confirm('Are you sure you want to delete this item?');">
+                            <button type="button" class="btn btn-success mm bt"> Remove</button>
+                        </a>
+                        <a href="/app/members/edit/${member.id}">
+                            <button type="button" class="btn btn-warning mm bt">Edit</button>
+                        </a>
+                        <a href="/app/members/plan/${member.id}">
+                            <button type="button" class="btn btn-primary mm bt">Week plan</button>
+                        </a>
+                    </div>
+                </th>
 
-        <td> ${member.name}</td>
-    </tr>
-    </c:forEach>
-    </tbody>
-</table>
+                <td> ${member.name}</td>
+            </tr>
+            </c:forEach>
+            </tbody>
+        </table>
 
-        </div>
     </div>
+</div>
 
 <br>
 <br>

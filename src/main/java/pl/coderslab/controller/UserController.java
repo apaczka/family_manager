@@ -26,36 +26,36 @@ public class UserController {
     UserService userService;
 
     @RequestMapping("/main")
-    public String showMain(){
+    public String showMain() {
         return "users/main";
     }
 
 
     @RequestMapping("/logout")
-    public String logoutUser(HttpSession session){
+    public String logoutUser(HttpSession session) {
 
 
-            session.invalidate();
-            return "redirect:/";
-           }
+        session.invalidate();
+        return "redirect:/";
+    }
 
 
-@GetMapping("/edit")
-    public String showEditForm(Model model, HttpSession session){
+    @GetMapping("/edit")
+    public String showEditForm(Model model, HttpSession session) {
         User user = (User) session.getAttribute("logged");
         model.addAttribute("user", user);
         return "users/edit";
-}
-
-@RequestMapping("/edit")
-    public String updateUser(@Valid User user, BindingResult result, HttpSession session){
-    if(result.hasErrors()){
-        return "users/edit";
-    }else{
-
-        userService.saveUser(user);
-        session.setAttribute("logged", user);
     }
+
+    @RequestMapping("/edit")
+    public String updateUser(@Valid User user, BindingResult result, HttpSession session) {
+        if (result.hasErrors()) {
+            return "users/edit";
+        } else {
+
+            userService.saveUser(user);
+            session.setAttribute("logged", user);
+        }
         return "redirect:/app/users/main";
-}
+    }
 }

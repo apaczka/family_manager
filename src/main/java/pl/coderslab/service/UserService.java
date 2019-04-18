@@ -13,23 +13,23 @@ import java.util.List;
 public class UserService {
 
     @Autowired
-   private UserRepository userRepository;
+    private UserRepository userRepository;
 
 
-    public void saveUser(User user){
+    public void saveUser(User user) {
         userRepository.save(user);
     }
 
-    public void deleteUser(Long id){
+    public void deleteUser(Long id) {
         userRepository.delete(id);
     }
 
-    public User find(Long id){
+    public User find(Long id) {
         return userRepository.findOne(id);
 
     }
 
-    public List<User> showAllUsers(){
+    public List<User> showAllUsers() {
         return userRepository.findAll();
     }
 

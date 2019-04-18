@@ -3,6 +3,8 @@ package pl.coderslab.model;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
+
+import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -32,13 +34,13 @@ public class Event {
     @NotNull
     private LocalDate date;
 
-    @Column(name="categories", length=100)
+    @Column(name = "categories", length = 100)
     @NotBlank
     private String category;
 
     private String notes;
 
-    @ManyToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     private List<FamilyMember> members = new ArrayList<>();
 
     @ManyToOne

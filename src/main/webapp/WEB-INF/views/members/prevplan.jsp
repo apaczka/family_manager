@@ -61,7 +61,8 @@
                             <c:choose>
                                 <c:when test="${dayOfWeek != 0}">
                                     <b>
-                                            ${today.plusDays(dayOfWeek-1).getDayOfWeek()}<br>${today.plusDays(dayOfWeek-1)}</b>
+                                            ${today.plusDays(dayOfWeek-1).getDayOfWeek()}<br>${today.plusDays(dayOfWeek-1)}
+                                    </b>
                                 </c:when>
                             </c:choose>
                         </c:when>
@@ -75,7 +76,8 @@
                                     <%--${eventsMap.get(today.plusDays(dayOfWeek-1))}<br><br>--%>
                                     <%--Godzina ${LocalTime.now()}<br><br>--%>
                                     <%--${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}--%>
-                                    <c:set var="event" value="${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}"></c:set>
+                                    <c:set var="event"
+                                           value="${eventsMap.get(today.plusDays(dayOfWeek-1)).get(LocalTime.of(hour, 0))}"></c:set>
                                     <c:if test="${not empty event}">
 
                                         <div class="calendar">
@@ -87,8 +89,10 @@
                                             </c:forEach>
                                             <span> ${event.category} </span><br>
                                             <span> ${event.notes} </span><br>
-                                            <a href="/app/events/remove/${event.id}"><img class="pencil" src="/resources/images/recycle-bin.svg"/></a><br>
-                                            <a href="/app/events/edit/${event.id}"><img class="pencil" src="/resources/images/pencil.svg"/></a><br>
+                                            <a href="/app/events/remove/${event.id}"><img class="pencil"
+                                                                                          src="/resources/images/recycle-bin.svg"/></a><br>
+                                            <a href="/app/events/edit/${event.id}"><img class="pencil"
+                                                                                        src="/resources/images/pencil.svg"/></a><br>
 
                                         </div>
                                     </c:if>

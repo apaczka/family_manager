@@ -49,16 +49,16 @@
 </nav>
 
 <div class="user" align="center">
-<form:form class="form-signin" method="post" modelAttribute="user" action="/app/users/edit">
-    <form:hidden path="id"/>
-    <form:hidden path="family" value="${user.family.id}" class="ss"/>
-    <form:input path="name"/><br>
-    <form:errors path="name" cssClass="error" element="div"/>
-    <form:password path="password" class="ss" placeholder="password"/><br>
-    <form:errors path="password" cssClass="error" element="div"/>
-    <button class="btn btn-lg btn-primary btn-block ss" type="submit"><input type="submit" value="save"/>
-    </button>
-</form:form>
+    <form:form class="form-signin" method="post" modelAttribute="user" action="/app/users/edit">
+        <form:hidden path="id"/>
+        <form:hidden path="family" value="${user.family.id}" class="ss"/>
+        <form:input path="name"/><br>
+        <form:errors path="name" cssClass="error" element="div"/>
+        <form:password path="password" class="ss" placeholder="password"/><br>
+        <form:errors path="password" cssClass="error" element="div"/>
+        <button class="btn btn-lg btn-primary btn-block ss" type="submit"><input type="submit" value="save"/>
+        </button>
+    </form:form>
 
 </div>
 

@@ -17,23 +17,24 @@ public class MemberService {
     private MemberRepository memberRepository;
 
 
-    public List<FamilyMember> showAllMembers(){
+    public List<FamilyMember> showAllMembers() {
         return memberRepository.findAll();
     }
 
-    public FamilyMember findbyId(Long id){
+    public FamilyMember findbyId(Long id) {
         return memberRepository.findOne(id);
     }
 
-    public void saveMember(FamilyMember familyMember){
+    public void saveMember(FamilyMember familyMember) {
         memberRepository.save(familyMember);
     }
 
-    public List <FamilyMember> findAllFamilyMembers(Family family){
-       return memberRepository.findFamilyMemberByFamily(family);
+    public List<FamilyMember> findAllFamilyMembers(Family family) {
+        return memberRepository.findFamilyMemberByFamily(family);
 
     }
-    public void removeMember(Long id){
+
+    public void removeMember(Long id) {
         memberRepository.delete(id);
     }
 }

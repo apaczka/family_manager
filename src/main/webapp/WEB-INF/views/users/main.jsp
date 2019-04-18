@@ -60,9 +60,11 @@
 <p class="main" style="margin-bottom: 70px"> You are signed in as: ${logged.name} </p>
 
 <div class="container">
-    <div class="row" >
+    <div class="row">
         <div class="col col-md-3 col-sm-6 ">
-            <a href="/app/members/add"><button type="button" class="btn btn-primary btn-lg mm ">Add member</button></a>
+            <a href="/app/members/add">
+                <button type="button" class="btn btn-primary btn-lg mm ">Add member</button>
+            </a>
         </div>
         <div class="col col-md-9 col-sm-6">
             <h3>Family members</h3>
@@ -72,7 +74,9 @@
     </div>
     <div class="row">
         <div class="col col-md-3 col-sm-6 mm">
-            <a href="/app/events/add"><button type="button" class="btn btn-success btn-lg mm">Add event</button></a>
+            <a href="/app/events/add">
+                <button type="button" class="btn btn-success btn-lg mm">Add event</button>
+            </a>
         </div>
         <div class="col col-md-9 col-sm-6">
             <h3>Add new family event</h3>
@@ -81,7 +85,9 @@
     </div>
     <div class="row">
         <div class="col col-md-3 col-sm-6">
-            <a href="/app/events/week"><button type="button" class="btn btn-warning btn-lg mm">Week plan</button></a>
+            <a href="/app/events/week">
+                <button type="button" class="btn btn-warning btn-lg mm">Week plan</button>
+            </a>
         </div>
         <div class="col col-md-9 col-sm-6">
             <h3>Look at family week plan</h3>
@@ -90,7 +96,9 @@
     </div>
     <div class="row">
         <div class="col col-md-3 col-sm-6">
-            <a href="/app/members/all"><button type="button" class="btn btn-danger btn-lg mm">All members</button></a>
+            <a href="/app/members/all">
+                <button type="button" class="btn btn-danger btn-lg mm">All members</button>
+            </a>
         </div>
         <div class="col col-md-9 col-sm-6">
             <h3>Display list of your family members</h3>
@@ -99,22 +107,22 @@
     </div>
 </div>
 
-    <div align="center">
-        <div class="col col-md-10">
+<div align="center">
+    <div class="col col-md-10">
         <img src="/images/children.jpg" class="img-fluid" alt="children" style="margin-top: 100px">
-        </div>
     </div>
+</div>
 <br>
 <br>
 <br>
 <br>
 
-    <nav class="navbar sticky-bottom navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
-        <p class="navbar-brand" href="#">Family manager - developed by Apaczka</p>
-    </nav>
+<nav class="navbar sticky-bottom navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
+    <p class="navbar-brand" href="#">Family manager - developed by Apaczka</p>
+</nav>
 
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

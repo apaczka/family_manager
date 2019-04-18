@@ -53,24 +53,24 @@
             <form:input path="name" class="form-control" placeholder="username"/><br>
             <form:errors path="name" cssClass="error" element="div"/>
             <label for="password" class="sr-only">Password</label>
-             <form:password path="password" class="form-control" placeholder="password"/><br>
+            <form:password path="password" class="form-control" placeholder="password"/><br>
             <form:errors path="password" cssClass="error" element="div"/>
-             <input type="text" name="familyName" placeholder="family name"><br>
+            <input type="text" name="familyName" placeholder="family name"><br>
             <br>
             <button class="btn btn-lg btn-primary btn-block" type="submit"><input type="submit" value="register"/>
             </button>
         </form:form>
 
 
-</div>
+    </div>
 
 
-<nav class="navbar fixed-bottom navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
-    <p class="navbar-brand" href="#">Family manager - developed by Apaczka</p>
-</nav>
+    <nav class="navbar fixed-bottom navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">
+        <p class="navbar-brand" href="#">Family manager - developed by Apaczka</p>
+    </nav>
 
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="resources/js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
 </body>
 </html>

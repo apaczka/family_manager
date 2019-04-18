@@ -43,16 +43,16 @@
 </nav>
 
 <div align="center" class="login">
-<form:form method="post" modelAttribute="fake">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <div class="form-group">
-    Nazwa:  <form:input path="name"/><br>
-    <form:errors path="name" cssClass="error" element="div"/>
-    </div>
-    Hasło: <form:password path="password"/><br>
-    <form:errors path="password" cssClass="error" element="div"/>
-       <input type="submit" value="submit" class="btn btn-primary"/>
-</form:form>
+    <form:form method="post" modelAttribute="fake">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <div class="form-group">
+            Nazwa: <form:input path="name"/><br>
+            <form:errors path="name" cssClass="error" element="div"/>
+        </div>
+        Hasło: <form:password path="password"/><br>
+        <form:errors path="password" cssClass="error" element="div"/>
+        <input type="submit" value="submit" class="btn btn-primary"/>
+    </form:form>
 </div>
 
 <nav class="navbar fixed-bottom navbar navbar-dark bg-primary" style="background-color: #e3f2fd;">

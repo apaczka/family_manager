@@ -50,42 +50,50 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
+
     @Bean
     public LocalEntityManagerFactoryBean entityManagerFactory() {
         LocalEntityManagerFactoryBean emfb = new LocalEntityManagerFactoryBean();
         emfb.setPersistenceUnitName("familyManagerPersistenceUnit");
-        return emfb; }
+        return emfb;
+    }
+
     @Bean
     public JpaTransactionManager transactionManager(EntityManagerFactory emf) {
         JpaTransactionManager tm = new JpaTransactionManager(emf);
-        return tm; }
+        return tm;
+    }
 
-//
+    //
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addConverter(getFamilyConverter());
         registry.addConverter(getDateConverter());
         registry.addConverter(getMemberConverter());
     }
+
     @Bean
-    public FamilyConverter getFamilyConverter () {
+    public FamilyConverter getFamilyConverter() {
         return new FamilyConverter();
     }
+
     @Bean
-    public DateConverter getDateConverter(){
+    public DateConverter getDateConverter() {
         return new DateConverter();
     }
-//
+
+    //
     @Bean
-    public MemberConverter getMemberConverter(){
+    public MemberConverter getMemberConverter() {
         return new MemberConverter();
     }
 
-    @Bean(name="localeResolver")
+    @Bean(name = "localeResolver")
     public LocaleContextResolver getLocaleContextResolver() {
         SessionLocaleResolver localeResolver = new SessionLocaleResolver();
-        localeResolver.setDefaultLocale(new Locale("pl","PL"));
-        return localeResolver; }
+        localeResolver.setDefaultLocale(new Locale("pl", "PL"));
+        return localeResolver;
+    }
 
     @Bean
     public Validator validator() {
@@ -98,8 +106,8 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
 
-        mailSender.setUsername("");
-        mailSender.setPassword("");
+        mailSender.setUsername("apaczka83@gmail.com");
+        mailSender.setPassword("apacz444");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

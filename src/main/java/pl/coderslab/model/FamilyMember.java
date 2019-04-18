@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="members")
+@Table(name = "members")
 public class FamilyMember {
 
     @Id
@@ -17,13 +17,13 @@ public class FamilyMember {
 
     @Column(length = 100)
     @NotBlank
-   private String name;
+    private String name;
 
     @Column(length = 50)
     @NotBlank
     private String role;
 
-    @Column(name="phone_number", length = 100)
+    @Column(name = "phone_number", length = 100)
     private int phoneNumber;
 
     @Email
@@ -32,7 +32,7 @@ public class FamilyMember {
     @ManyToOne(cascade = CascadeType.MERGE)
     private Family family;
 
-    @ManyToMany(mappedBy = "members",fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "members", fetch = FetchType.EAGER)
     private List<Event> events = new ArrayList<>();
 
     public Long getId() {
